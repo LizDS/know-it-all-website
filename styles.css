@@ -1,0 +1,532 @@
+/* -------------------------
+   GENERAL
+------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+
+/* -------------------------
+   NAVIGATION
+------------------------- */
+
+.header {
+  background: #FFDB57;
+  border-bottom: 5px solid #ffffff;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 20px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* -------------------------
+   HERO
+------------------------- */
+
+.hero {
+  min-height: 650px;
+
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 80px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #EDEDED;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.small-heading {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  font-weight: normal;
+}
+
+.hero-text {
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.hero-image {
+  width: 360px;
+  height: 360px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin: auto;
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+}
+
+
+/* -------------------------
+   BUTTON
+------------------------- */
+
+.button {
+  display: inline-block;
+
+  background: #222;
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 3px;
+
+  margin-top: 15px;
+
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+
+/* -------------------------
+   PROGRAMS
+------------------------- */
+
+.programs {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 100px 30px;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+
+  margin: 0 auto 60px;
+}
+
+.section-heading > p:last-child {
+  color: #666;
+}
+
+.program-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.program-card {
+  padding: 35px;
+
+  border: 1px solid #ddd;
+
+  background: white;
+
+  transition: 0.2s;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+  font-size: 45px;
+
+  margin-bottom: 20px;
+}
+
+.program-card h3 {
+  font-size: 25px;
+
+  margin-bottom: 5px;
+}
+
+.age {
+  color: #777;
+  font-size: 14px;
+}
+
+.program-card ul {
+  margin: 20px 0;
+
+  padding-left: 20px;
+}
+
+.lesson-info {
+  font-size: 13px;
+  font-weight: bold;
+
+  color: #666;
+}
+
+
+/* -------------------------
+   YOUTUBE
+------------------------- */
+
+.youtube-section-outer {
+  background: #EDEDED;
+}
+
+
+.youtube-section-inner {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 120px 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.youtube-section-inner > div:first-child {
+  max-width: 600px;
+}
+
+.youtube-image {
+  width: 230px;
+  height: 230px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 100px;
+}
+
+.youtube-logo {
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    margin: auto;
+    object-fit: contain;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* -------------------------
+   Youtube BUTTON
+------------------------- */
+
+.button-youtube {
+    display: inline-block;
+    font-size: 15px;
+    text-align: center;
+    background: #FF0000;
+    color: white;
+    width: 210px;
+    height: 50px;
+    padding: 10px 8px;
+
+    border-radius: 3px;
+
+    margin-top: 15px;
+
+    transition: 0.2s;
+}
+
+.button-youtube:hover {
+  background: #f70000;
+  transform: translateY(-2px);
+}
+
+.flag {
+    font-size: 20px;
+    text-shadow: 
+    -1px -1px 0 white,  
+     1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+}
+
+
+/* -------------------------
+   CONTACT
+------------------------- */
+
+.contact {
+  max-width: 1200px;
+  margin: auto;
+
+  padding: 100px 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 80px;
+}
+
+.contact-info {
+  max-width: 500px;
+}
+
+.contact-info h2 {
+  font-size: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+
+  padding: 14px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .button {
+  border: none;
+
+  cursor: pointer;
+
+  align-self: flex-start;
+}
+
+
+/* -------------------------
+   FOOTER
+------------------------- */
+
+.footer {
+  padding: 20px;
+
+  background: #FFDB57;
+  color: black;
+  margin: auto;
+}
+
+.footer-inner{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer a {
+  margin-left: 20px;
+}
+
+
+.logo-text {
+    width: 100px;
+    height: 16px;
+    margin: auto;
+    object-fit: contain;
+    display: inline-block;
+}
+
+
+/* -------------------------
+   RESPONSIVE
+------------------------- */
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 50px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .program-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .youtube-section-inner {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 40px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 260px;
+  }
+
+.logo {
+  width: 250px;
+  height: 250px;
+}
+
+  .programs {
+    padding: 70px 20px;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  .youtube-section-inner {
+    margin: 0 20px;
+    padding: 60px 25px;
+  }
+
+  .contact {
+    padding: 70px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer a {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
