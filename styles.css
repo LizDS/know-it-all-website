@@ -330,9 +330,9 @@ p {
     color: white;
     width: 210px;
     height: 50px;
-    padding: 10px 8px;
+    padding: 14px 8px 10px 8px;
 
-    border-radius: 3px;
+    border-radius: 4px;
 
     margin-top: 15px;
 
@@ -345,12 +345,15 @@ p {
 }
 
 .flag {
-    font-size: 20px;
-    text-shadow: 
+    border-radius: 2px;
+     width: 16px;
+    height: 12px;
+    box-shadow: 
     -1px -1px 0 white,  
      1px -1px 0 white,
     -1px  1px 0 white,
      1px  1px 0 white;
+
 }
 
 
